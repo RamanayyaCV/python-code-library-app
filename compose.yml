@@ -13,7 +13,7 @@ services:
    - "5001:5001"
   deploy:
     replicas: 1
-	
+
  book_service:
   image: ramanayyacv/pythonstack:bookimage
   ports:
