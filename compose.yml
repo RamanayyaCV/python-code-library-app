@@ -5,33 +5,33 @@ services:
   ports:
    - "3306:3306"
   deploy:
-    replicas: 1
+    replicas: 2
  
  auth_service:
   image: ramanayyacv/pythonstack:authimage
   ports:
    - "5001:5001"
   deploy:
-    replicas: 1
+    replicas: 2
 
  book_service:
   image: ramanayyacv/pythonstack:bookimage
   ports:
    - "5002:5002"
   deploy:
-    replicas: 1
+    replicas: 2
  
  borrow_service:
   image: ramanayyacv/pythonstack:borrowimage
   ports:
    - "5003:5003"
   deploy:
-    replicas: 1
+    replicas: 2
  
  app_service:
   image: ramanayyacv/pythonstack:appimage
   ports: 
    - "5000:5000"
   deploy:
-    replicas: 1
+    replicas: 2
    
