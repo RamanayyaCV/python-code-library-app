@@ -1,0 +1,37 @@
+---
+services:
+ db:
+  image: ramanayyacv/pythonstack:dbimage
+  ports:
+   - "3306:3306"
+  deploy:
+    replicas: 1
+	
+ auth_service:
+  image: ramanayyacv/pythonstack:authimage
+  ports:
+   - "5001:5001"
+  deploy:
+    replicas: 1
+	
+ book_service:
+  image: ramanayyacv/pythonstack:bookimage
+  ports:
+   - "5002:5002"
+  deploy:
+    replicas: 1
+ 
+ borrow_service:
+  image: ramanayyacv/pythonstack:borrowimage
+  ports:
+   - "5003:5003"
+  deploy:
+    replicas: 1
+ 
+ app_service:
+  image: ramanayyacv/pythonstack:appimage
+  ports: 
+   - "5000:5000"
+  deploy:
+    replicas: 1
+   
