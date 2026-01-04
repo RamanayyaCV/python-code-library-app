@@ -6,7 +6,7 @@ services:
    - "3306:3306"
   deploy:
     replicas: 1
-	
+ 
  auth_service:
   image: ramanayyacv/pythonstack:authimage
   ports:
